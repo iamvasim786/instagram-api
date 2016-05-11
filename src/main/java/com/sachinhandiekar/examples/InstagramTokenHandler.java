@@ -33,7 +33,7 @@ public class InstagramTokenHandler extends HttpServlet {
 
         session.setAttribute(Constants.INSTAGRAM_OBJECT, instagram);
         UserInfoData userInfoData = instagram.getCurrentUserInfo().getData(); 
-        
+        // Decrepted
         //List<MediaFeedData> mediaList = instagram.getUserFeeds().getData();
         System.out.println(userInfoData.getUsername());
         System.out.println(request.getContextPath());
